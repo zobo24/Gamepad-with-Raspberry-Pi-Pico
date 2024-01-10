@@ -4,6 +4,7 @@
 PicoGamepad gamepad;
 
 
+
 //SETTING BBOUNCE FOR EACH BBUTTON
 
 const int numButtons = 8;
@@ -35,7 +36,8 @@ void setup() {
 
   //START POINT BY BOARD
   Serial.begin(115200);
-
+      //set hat to minimal so it is not giving any bugs to ingame experience 
+     gamepad.SetHat(0,3);
   // Setting pins on the board for pull-up resistor method
   for (int i = 0; i < numButtons; i++) {
     pinMode(buttons[i].getPin(), INPUT_PULLUP);
@@ -91,7 +93,7 @@ for (int i = 0; i < numButtons; i++) {
   else if (button0.risingEdge()) {
     gamepad.SetButton(0, false);
     Serial.println("not pressed");
-  }
+  }
 */
 
 }
