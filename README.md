@@ -34,6 +34,8 @@ You can easily extend the system by adding extra buttons. Here’s how:
    }
 
 ---
-📄 LICENSE:
-This project is licensed under the MIT License - see the LICENSE file for details.
 
+### 📄 LICENSE:
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
